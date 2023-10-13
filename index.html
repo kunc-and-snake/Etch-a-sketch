@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" style="box-sizing: border-box;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Etch-A-Sketch</h1>
+        <p>made by kunc</p>
+        <div style="height : 50px;"></div>
+        <span id="isActive">Drawing</span> <span class="controls">Left click</span>
+        <span id="isErasing">Erasing</span> <span class="controls">Key e</span>
+        <span id="color">Color</span> <span class="controls">Keys c / C</span>
+        <div style="height: 50px;"></div>
+        <span style="font-size: 1.3rem">Grid size</span>
+        <input id="gridSize" placeholder="30" type="number">
+        <button id="setSize" onclick=newGrid()>Set</button>
+        <span id="gridSizeExceeded">Grid size cannot exceed 64. </span>
+        <div style="height: 50px;"></div>
+        <span style="font-size: 1.4rem">Color settings</span>
+        <div style="height: 20px;"></div>
+
+        
+        <span style="font-size: 1.4rem">Hue</span> 
+        <div class="color-field">
+            <input class="colorSlider" type="range" min="1" max="360" id="colorHueSlider" oninput="colorSliderMove()">
+            <span id="hueValue">0</span>
+        </div>
+        
+        <span style="font-size: 1.4rem">Saturation</span> 
+        <div class="color-field">
+            <input class="colorSlider" type="range" min="1" max="100"  id="colorSatSlider" oninput="colorSliderMove()">
+            <span id="saturationValue">50%</span>
+        </div>
+
+        <span style="font-size: 1.4rem">Lightness</span> 
+        <div class="color-field">
+            <input class="colorSlider" type="range" min="1" max="100" id="colorLigSlider" oninput="colorSliderMove()">
+            <span id="lightnessValue">50%</span>
+        </div>
+
+        
+    </div>
+</body>
+</html>

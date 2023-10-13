@@ -1,0 +1,104 @@
+* {
+    /* border: 1px solid pink; */
+}
+
+html {
+    overflow-y: hidden;
+    padding : none;
+    margin: none;
+    font-family: monospace;
+}
+
+.frame {
+    border : 5px solid rgb(0, 0, 0);
+    margin: 0 auto;
+    /* background-color: rgb(240, 240, 240); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.square {
+    background-color: rgb(254, 254, 254);
+    /* transition: background-color 0.1s; */
+}
+
+.sidebar {
+    position: absolute;
+    height: 100vh;
+    width: 20%;
+    color : black;
+    margin: none;
+    left: 0;
+    top: 30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar > h1 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.sidebar > p {
+    margin-top: 0;
+}
+
+.sidebar > button {
+    margin-top: 10px;
+    background-color: white;
+    border: none;
+    width: 100%;
+    font-family: monospace;
+}
+
+#isActive {
+    font-size: 1.5rem;
+    color : rgb(200, 200, 200);
+
+}
+
+#gridSize {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#gridSizeExceeded {
+    color: red;
+    margin-top : 20px;
+    visibility: hidden;
+}
+
+#isErasing {
+    font-size: 1.5rem;
+    color : rgb(200, 200, 200);
+}
+
+#color {
+    font-size: 1.5rem;
+    color : rgb(200, 200, 200);
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.controls {
+    font-size: 0.7rem;
+}
+
+.color-field {
+    display: flex;
+    flex-wrap: nowrap;
+    gap : 10px;
+    align-items: center;
+}
+
